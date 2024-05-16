@@ -23,20 +23,6 @@ IF(NOT CMAKE_BUILD_TYPE)
    MESSAGE(STATUS ${CMAKE_BUILD_TYPE})
 ENDIF()
 
-# Find sdbus-c++
-find_package(sdbus-c++ CONFIG REQUIRED)
-if (sdbus-c++_FOUND)
-  set(DEPS_LIBRARIES dbus-1 sdbus-c++)
-  if(NOT CONAN_BUILD)    
-      set(sdbus-c++_INCLUDE_DIR /opt/sdbus-c++/include)
-      set(sdbus-c++_LIB_DIR /opt/sdbus-c++/lib)
-      link_directories(${sdbus-c++_LIB_DIR})
-  endif()
-  message(STATUS "####### sdbus-c++ Package Found !")
-  message(STATUS "####### sdbus-c++_VERSION:                "   ${sdbus-c++_VERSION})
-  message(STATUS "####### sdbus-c++_INCLUDE_DIR:            "   ${sdbus-c++_INCLUDE_DIR})
-  message(STATUS "####### sdbus-c++_DIR:                    "   ${sdbus-c++_DIR})
-endif()
 
 # Find boost
 # Boost
