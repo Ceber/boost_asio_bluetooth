@@ -1,5 +1,9 @@
 Forked from https://github.com/datengx/boost_asio_bluetooth
 
+
+![Workflow](https://github.com/Ceber/boost_asio_bluetooth/actions/workflows/cmake-single-platform.yml/badge.svg)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ceber68)
+
 # boost_asio_bluetooth
 This project extend the Boost ASIO functionality by adding bluetooth connection. More specifically, a `bluetooth` protocol class was added along with a bluetooth `endpoint` implementation. For more information regarding adding other types of protocol to the Boost ASIO library, check [this](http://www.boost.org/doc/libs/1_64_0/doc/html/boost_asio/overview/networking/other_protocols.html) link.
 
